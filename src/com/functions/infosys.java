@@ -2,6 +2,7 @@ package com.functions;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class infosys {
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class infosys {
         int count=0;
 
         for(int i =0 ; i< N ;i++){
-                if(A.get(i) == B.get(i)){
+                if(Objects.equals(A.get(i), B.get(i))){
                     count = count +1;
                 }
         }
