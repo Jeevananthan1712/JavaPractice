@@ -10,7 +10,7 @@ public class SortedarrayFindaNumber {
                  {9,10,11,12},
                  {13,14,15,16}
          };
-         int target = 8;
+         int target = 12;
         System.out.println(Arrays.toString(soretedArraySearch(arr,target)));
     }
     static int[] soretedArraySearch(int[][] arr,int target){
@@ -49,16 +49,18 @@ public class SortedarrayFindaNumber {
         if(arr[rstart][cmid-1] >= target){
             return BinarySearch(arr,rstart,0,cmid - 1,target);
         }
+        if(arr[rstart][cmid+1] <= target && target <= arr[rstart][cols-1]){
+            return BinarySearch(arr,rstart,cmid+1,cols - 1,target);
+        }
         if(arr[rstart+1][cmid-1] >= target){
             return BinarySearch(arr,rstart+1,0,cmid - 1,target);
         }
-        if(arr[rstart][cmid+1] <= target){
-            return BinarySearch(arr,rstart,cmid+1,cols - 1,target);
-        }
-        if(arr[rstart+1][cmid+1] <= target){
+
+//        (arr[rstart+1][cmid+1] <= target && target <= arr[rstart+1][cols-1])
+        else{
             return BinarySearch(arr,rstart+1,cmid+1,cols - 1,target);
         }
-        return new int[]{-1,-1};
+
     }
     static int[] BinarySearch(int[][] arr , int row,int cstart,int cend,int target){
         while (cstart <= cend){
