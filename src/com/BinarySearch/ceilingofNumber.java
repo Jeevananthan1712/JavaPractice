@@ -41,14 +41,7 @@ public class  ceilingofNumber{
         int target = 190;
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
-//        int n = in.nextInt();
-//        int[] arr = new int[n];
-//        for(int i=0;i<n;i++){
-//            System.out.print("Enter "+i+" element");
-//            arr[i] = in.nextInt();
-//        }
-//        System.out.print("Enter target: ");
-//        int target = in.nextInt();
+//
         System.out.print(search(arr,target));
     }
     static int search(int[] arr,int target) {
