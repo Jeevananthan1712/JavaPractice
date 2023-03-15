@@ -8,7 +8,7 @@ import java.util.List;
 public class DisappiredNumber {
     public static void main(String[] args) {
         Solutn sol = new Solutn();
-        int[] arr = {4,3,2,7,8,2,3,1};
+        int[] arr = {4,3,2,7,8,3,1};
         System.out.println(sol.findDisappearedNumbers(arr));
 
     }
