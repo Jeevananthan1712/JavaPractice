@@ -4,7 +4,7 @@ package Kunal;
 
 import java.util.Scanner;
 
-public class lexicographicallyDictionaryWiseCompareString {
+public class   lexicographicallyDictionaryWiseCompareString {
     public static void main(String[] args) {
 //        String str1 = "Jeeva bruh";
 //        String str2 = "Jeeva Bro";
