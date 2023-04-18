@@ -16,7 +16,7 @@ public class pattern1 {
     static void patterOne(int num){
         System.out.println("PatternOne Printing...");
         for(int i=1;i<=num;i++){
-            for(int j=num;j>i;j--){
+            for(int j=num;j>=i;j--){
                 System.out.print("* ");
 
             }
